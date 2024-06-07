@@ -1,0 +1,46 @@
+name: varnish
+type: reverse-proxy
+icon: varnish
+title: Varnish
+scalable: true
+hostname: varnish
+
+options:
+- version: '6.0'
+  tag: '6.0'
+  default: true
+
+containers:
+- name: varnish
+  image: wodby/varnish
+
+endpoints:
+- name: http
+  ports:
+  - name: http
+    number: 6081
+    type: http
+    main: true
+
+labels:
+- varnish
+
+configs:
+- name: main
+  title: Main
+  filepath: /etc/gotpl/default.vcl.tmpl
+  config: default.vcl.tmpl
+
+helm:
+  name: wodby
+  source: oci://registry-1.docker.io/wodby/varnish
+  chart: oci://registry-1.docker.io/wodby/varnish
+  version: 0.1.0
+  configurations:
+  - name: varnish
+    labels: commonLabels
+    annotations: commonAnnotations
+    env: extraEnvVars
+    resources: resources
+    volumes: extraVolumes
+    mounts: extraVolumeMounts
