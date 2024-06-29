@@ -1,5 +1,5 @@
 name: varnish
-type: reverse-proxy
+type: service
 icon: varnish
 title: Varnish
 scalable: true
