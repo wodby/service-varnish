@@ -42,8 +42,10 @@ links:
 env:
 - name: VARNISH_SECRET
   value: '{{secret}}'
+  secret: true
 - name: VARNISH_PURGE_KEY
-  value: '{{purge_key}}'  
+  value: '{{purge_key}}'
+  secret: true
 - name: VARNISH_PURGE_EXTERNAL_REQUEST_HEADER
   value: X-Real-IP
 
