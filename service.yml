@@ -70,7 +70,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/varnish
   chart: oci://registry-1.docker.io/wodby/varnish
-  version: 0.1.0
+  version: 0.2.0
   configurations:
   - name: varnish
     labels: commonLabels
