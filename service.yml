@@ -19,7 +19,7 @@ endpoints:
   ports:
   - name: http
     number: 6081
-    type: http
+    protocol: http
     main: true
 
 links:
