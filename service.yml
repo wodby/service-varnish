@@ -9,10 +9,12 @@ options:
 - version: '6.0'
   tag: '6.0'
   default: true
+- version: '8.0'
+  tag: '8.0'
 
 containers:
 - name: varnish
-  image: wodby/varnish
+  image: wodby/vinyl
 
 endpoints:
 - name: http
@@ -68,9 +70,9 @@ configs:
 
 helm:
   name: wodby
-  source: oci://registry-1.docker.io/wodby/varnish
-  chart: oci://registry-1.docker.io/wodby/varnish
-  version: 0.2.0
+  source: oci://registry-1.docker.io/wodby/vinyl
+  chart: oci://registry-1.docker.io/wodby/vinyl
+  version: 0.1.0
   configurations:
   - name: varnish
     labels: commonLabels
