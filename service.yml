@@ -79,7 +79,7 @@ helm:
   chart: oci://registry-1.docker.io/wodby/varnish
   version: 0.2.0
   configurations:
-  - name: varnish
+  - container: varnish
     labels: commonLabels
     annotations: commonAnnotations
     env: extraEnvVars
