@@ -3,7 +3,6 @@ type: service
 icon: varnish
 title: Varnish
 scalable: true
-hostname: varnish
 
 options:
 - version: '8.0'
