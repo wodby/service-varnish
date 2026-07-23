@@ -64,10 +64,11 @@ configs:
   filepath: /etc/gotpl/default.vcl.tmpl
   config: default.vcl.6.tmpl
   version: '6.0'
-- name: main-8
+- name: main
   title: Main
   filepath: /etc/gotpl/default.vcl.tmpl
   config: default.vcl.8.tmpl
+  version: '8.0'
 
 helm:
   name: wodby
