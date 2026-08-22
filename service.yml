@@ -66,11 +66,19 @@ configs:
     source: image
     filepath: /etc/gotpl/default.vcl.tmpl
 
+deployment:
+  strategy: rolling
+  maxUnavailable: 0
+  maxSurge: 1
+  minReady: 10s
+  progressDeadline: 15m
+  shutdownGracePeriod: 30s
+
 helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/varnish
   chart: oci://registry-1.docker.io/wodby/varnish
-  version: 0.2.1
+  version: 0.3.0
 
 workloads:
 - name: main
