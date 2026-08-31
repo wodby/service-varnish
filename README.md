@@ -20,7 +20,7 @@ configuration for Varnish.
 | Containers | `varnish` using `wodby/vinyl` |
 | Endpoints | `http`: HTTP 6081 (main) |
 | Service links | Backend, required |
-| Helm | chart `oci://registry-1.docker.io/wodby/varnish`; version `0.3.1` |
+| Helm | chart `oci://registry-1.docker.io/wodby/varnish`; version `0.3.2` |
 | Configuration | 2 configuration files, 2 generated or fixed tokens |
 
 ## Use this service
