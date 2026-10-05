@@ -15,7 +15,7 @@ configuration for Varnish.
 | --- | --- |
 | Service name | `varnish` |
 | Type | Application service |
-| Versions | `8.0` by default; also available: `6.0` |
+| Versions | `9.1` by default; also available: `8.0`, `6.0` |
 | Workloads | `main` (Deployment), primary; scalable |
 | Containers | `varnish` using `wodby/vinyl` |
 | Endpoints | `http`: HTTP 6081 (main) |
