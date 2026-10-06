@@ -2,6 +2,7 @@ name: varnish
 type: service
 icon: varnish
 title: Varnish
+guidance: GUIDANCE.md
 scalable: true
 
 options:
